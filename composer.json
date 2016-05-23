@@ -1,0 +1,30 @@
+{
+  "name": "codedge/laravel-fpdf",
+  "description" : "Laravel 5 package for use with Fpdf. It ships with Fpdf 1.81.",
+  "license": "MIT",
+  "keywords": [
+    "fpdf",
+    "laravel",
+    "pdf"
+  ],
+  "authors": [
+    {
+      "name": "Holger Lösken",
+      "email": "holger.loesken@codedge.de"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Codedge\\Fpdf\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "5.0-dev"
+    }
+  }
+}
