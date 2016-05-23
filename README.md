@@ -13,7 +13,7 @@ This adds the codedge/laravel-fpdf package to your `composer.json` and downloads
 
 Next run   
 `php artisan vendor:publish --provider="Codedge\Fpdf\FpdfServiceProvider" --tag=config`  
-to publish the configuration file for the SOFORT API to `config/fpdf.php`.  
+to publish the configuration file for the Fpdf PDF library to `config/fpdf.php`.  
   
 **Hint**: Open this file and enter the correct page settings, if you do not want the defaults.
 
