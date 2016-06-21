@@ -6,3 +6,9 @@ enabled:
   - phpdoc_no_empty_return
   - phpdoc_order
   - phpdoc_separation
+
+finder:
+  not-path:
+    - "src/Fpdf"
+  exclude:
+    - "doc"
