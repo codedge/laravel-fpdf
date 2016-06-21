@@ -1,16 +1,16 @@
-<?php namespace Codedge\Fpdf\Facades;
+<?php
+
+namespace Codedge\Fpdf\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Fpdf
- *
- * @package Codedge\Fpdf\Facades
+ * Class Fpdf.
  */
 class Fpdf extends Facade
 {
     /**
-     * Get the registered component name
+     * Get the registered component name.
      *
      * @return string
      */
