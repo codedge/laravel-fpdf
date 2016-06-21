@@ -11,7 +11,7 @@ See [@Fpdf](http://www.fpdf.org/) for more information about the usage.
 ## Installation using [Composer](https://getcomposer.org/)
 ```sh
 $ cd <YOUR LARAVEL PROJECT ROOT>
-$ composer require codedge/laravel-fpdf:"dev-master"
+$ composer require codedge/laravel-fpdf
 ```
 
 This adds the codedge/laravel-fpdf package to your `composer.json` and downloads the project.
