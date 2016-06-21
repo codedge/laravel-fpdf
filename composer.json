@@ -25,10 +25,5 @@
     "psr-4": {
       "Codedge\\Fpdf\\": "src/"
     }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "5.0-dev"
-    }
   }
 }
