@@ -15,13 +15,7 @@ $ cd <YOUR LARAVEL PROJECT ROOT>
 $ composer require codedge/laravel-fpdf
 ```
 
-This adds the codedge/laravel-fpdf package to your `composer.json` and downloads the project.
-
-Next run   
-`php artisan vendor:publish --provider="Codedge\Fpdf\FpdfServiceProvider" --tag=config`  
-to publish the configuration file for the Fpdf PDF library to `config/fpdf.php`.  
-  
-**Hint**: Open this file and enter the correct page settings, if you do not want the defaults.
+This adds the `codedge/laravel-fpdf` package to your `composer.json` and downloads the project.
 
 ## Usage
 To use the static interfaces (facades) you need to add the following lines to your `config/app.php`. The `[1]` is for
@@ -63,12 +57,18 @@ return [
 
 Now you can use the facades in your application. 
 
+Next run   
+`php artisan vendor:publish --provider="Codedge\Fpdf\FpdfServiceProvider" --tag=config`  
+to publish the configuration file for the Fpdf PDF library to `config/fpdf.php`.  
+  
+**Hint**: Open this file and enter the correct page settings, if you do not want the defaults.
+
 ## Basic example
 
 If you want to use the facade you can see a basic example here:
 
 ```php
-// app/Http/routes.php
+// app/Http/routes.php | app/routes/web.php
 
 Route::get('/', function () {
 
@@ -83,7 +83,7 @@ Route::get('/', function () {
 Of course you can also inject the singleton instance via dependency injection. See an example here:
 
 ```php
-// app/Http/routes.php
+// app/Http/routes.php | app/routes/web.php
 
 Route::get('/', function (Codedge\Fpdf\Fpdf\FPDF $fpdf) {
 
