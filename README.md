@@ -7,15 +7,13 @@
 
 This repository implements a simple [ServiceProvider](https://laravel.com/docs/master/providers)
 that creates a singleton instance of the Fpdf PDF library - easily accessible via a [Facade](https://laravel.com/docs/master/facades) in [Laravel 5](http://laravel.com).  
-See [@Fpdf](http://www.fpdf.org/) for more information about the usage.
+
+See [FPDF homepage](http://www.fpdf.org/) for more information about the usage.
 
 ## Installation using [Composer](https://getcomposer.org/)
 ```sh
-$ cd <YOUR LARAVEL PROJECT ROOT>
 $ composer require codedge/laravel-fpdf
 ```
-
-This adds the `codedge/laravel-fpdf` package to your `composer.json` and downloads the project.
 
 ## Usage
 To use the static interfaces (facades) you need to add the following lines to your `config/app.php`. The `[1]` is for
@@ -34,34 +32,26 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        // ...
         Codedge\Fpdf\FpdfServiceProvider::class, // [1]
     ],
     
     // ...
     
     'aliases' => [
-        'App' => Illuminate\Support\Facades\App::class,
-        'Artisan' => Illuminate\Support\Facades\Artisan::class,
-        
         // ...
-        
-        'View' => Illuminate\Support\Facades\View::class,
         'Fpdf' => Codedge\Fpdf\Facades\Fpdf::class, // [2]
-
 ]
 ```
 
 Now you can use the facades in your application. 
 
-Next run   
+## Configuration (optional)
+Run   
 `php artisan vendor:publish --provider="Codedge\Fpdf\FpdfServiceProvider" --tag=config`  
-to publish the configuration file for the Fpdf PDF library to `config/fpdf.php`.  
+to publish the configuration file to `config/fpdf.php`.  
   
-**Hint**: Open this file and enter the correct page settings, if you do not want the defaults.
+Open this file and enter the correct page settings, if you do not want the defaults.
 
 ## Basic example
 
@@ -85,7 +75,7 @@ Of course you can also inject the singleton instance via dependency injection. S
 ```php
 // app/Http/routes.php | app/routes/web.php
 
-Route::get('/', function (Codedge\Fpdf\Fpdf\FPDF $fpdf) {
+Route::get('/', function (Codedge\Fpdf\Fpdf\Fpdf $fpdf) {
 
     $fpdf->AddPage();
     $fpdf->SetFont('Courier', 'B', 18);
