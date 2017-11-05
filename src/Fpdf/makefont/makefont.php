@@ -67,7 +67,7 @@ function GetInfoFromTrueType($file, $embed, $subset, $map)
 		$ttf = new TTFParser($file);
 		$ttf->Parse();
 	}
-	catch(Exception $e)
+	catch(\Exception $e)
 	{
 		Error($e->getMessage());
 	}
