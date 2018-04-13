@@ -66,6 +66,7 @@ Route::get('/', function () {
     Fpdf::SetFont('Courier', 'B', 18);
     Fpdf::Cell(50, 25, 'Hello World!');
     Fpdf::Output();
+    exit;
 
 });
 ```
@@ -81,6 +82,6 @@ Route::get('/', function (Codedge\Fpdf\Fpdf\Fpdf $fpdf) {
     $fpdf->SetFont('Courier', 'B', 18);
     $fpdf->Cell(50, 25, 'Hello World!');
     $fpdf->Output();
-
+    exit;
 });
 ```
