@@ -1,5 +1,5 @@
 {
-  "name": "codedge/laravel-fpdf",
+  "name": "cierrateam/laravel-fpdf",
   "description" : "Laravel 5 package for use with Fpdf. It ships with Fpdf 1.81.",
   "license": "MIT",
   "keywords": [
@@ -15,6 +15,10 @@
     {
       "name": "Holger Lösken",
       "email": "holger.loesken@codedge.de"
+    },
+    {
+      "name": "Vittorio Emmermann",
+      "email": "vittorio@cierra.eu"
     }
   ],
   "require": {
