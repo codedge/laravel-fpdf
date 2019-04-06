@@ -17,6 +17,16 @@
       "email": "holger.loesken@codedge.de"
     }
   ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Codedge\\Fpdf\\FpdfServiceProvider"
+      ],
+      "aliases": {
+        "Updater": "Codedge\\Fpdf\\Facades\\Fpdf"
+      }
+    }
+  },
   "require": {
     "php": ">=5.4.0",
     "illuminate/support": "5.*"
