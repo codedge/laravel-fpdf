@@ -23,7 +23,7 @@
         "Codedge\\Fpdf\\FpdfServiceProvider"
       ],
       "aliases": {
-        "Updater": "Codedge\\Fpdf\\Facades\\Fpdf"
+        "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
       }
     }
   },
