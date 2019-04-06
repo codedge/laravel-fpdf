@@ -16,6 +16,11 @@ $ composer require codedge/laravel-fpdf
 ```
 
 ## Usage
+
+### Laravel >= 5.5
+Enjoy the auto discovery feature. 
+
+### Laravel <5.5
 To use the static interfaces (facades) you need to add the following lines to your `config/app.php`. The `[1]` is for
 registering the service provider, the `[2]` are for specifying the facades:
 
