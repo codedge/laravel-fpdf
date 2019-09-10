@@ -1,4 +1,4 @@
-# Laravel 5 package for Fpdf
+# Laravel package for Fpdf
 
 [![Latest Stable Version](https://poser.pugx.org/codedge/laravel-fpdf/v/stable?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
 [![Total Downloads](https://poser.pugx.org/codedge/laravel-fpdf/downloads?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
@@ -6,7 +6,7 @@
 [![License](https://poser.pugx.org/codedge/laravel-fpdf/license?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
 
 This repository implements a simple [ServiceProvider](https://laravel.com/docs/master/providers)
-that creates a singleton instance of the Fpdf PDF library - easily accessible via a [Facade](https://laravel.com/docs/master/facades) in [Laravel 5](http://laravel.com).  
+that creates a singleton instance of the Fpdf PDF library - easily accessible via a [Facade](https://laravel.com/docs/master/facades) in [Laravel](https://laravel.com/).  
 
 See [FPDF homepage](http://www.fpdf.org/) for more information about the usage.
 
