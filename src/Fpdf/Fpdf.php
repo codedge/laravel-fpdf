@@ -1004,6 +1004,9 @@ function Output($dest='', $name='', $isUTF8=false)
 				header('Content-Disposition: inline; '.$this->_httpencode('filename',$name,$isUTF8));
 				header('Cache-Control: private, max-age=0, must-revalidate');
 				header('Pragma: public');
+				if (config('fpdf.useVaporHeaders')) {
+					header('X-Vapor-Base64-Encode: True');
+				}
 			}
 			echo $this->buffer;
 			break;
@@ -1014,6 +1017,9 @@ function Output($dest='', $name='', $isUTF8=false)
 			header('Content-Disposition: attachment; '.$this->_httpencode('filename',$name,$isUTF8));
 			header('Cache-Control: private, max-age=0, must-revalidate');
 			header('Pragma: public');
+			if (config('fpdf.useVaporHeaders')) {
+				header('X-Vapor-Base64-Encode: True');
+			}
 			echo $this->buffer;
 			break;
 		case 'F':
