@@ -1,6 +1,6 @@
 {
   "name": "codedge/laravel-fpdf",
-  "description" : "Laravel 5 package for use with Fpdf. It ships with Fpdf 1.81.",
+  "description" : "Laravel package to include Fpdf. It ships with Fpdf 1.81.",
   "license": "MIT",
   "keywords": [
     "fpdf",
@@ -28,7 +28,7 @@
     }
   },
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=7.2",
     "illuminate/support": "5.*|6.*"
   },
   "autoload": {

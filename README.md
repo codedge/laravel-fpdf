@@ -92,7 +92,9 @@ Route::get('/', function (Codedge\Fpdf\Fpdf\Fpdf $fpdf) {
 
 ## Use in Laravel Vapor
 
-If you are wanting to use the [Laravel Vapor](https://vapor.laravel.com) platform to host your application, [a special/specific header](https://docs.vapor.build/1.0/projects/development.html#binary-responses) will need to be attached to each response that FPDF returns to your browser. To enable the use of this header, add the following environment variable to the Vapor environment file:
+If you want to use [Laravel Vapor](https://vapor.laravel.com) to host your application,
+[a special header](https://docs.vapor.build/1.0/projects/development.html#binary-responses) needs to be attached to each response that FPDF returns to your browser.
+To enable the use of this header, add the following environment variable to the Vapor environment file:
 
 ```dotenv
 FPDF_VAPOR_HEADERS=true
