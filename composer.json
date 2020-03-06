@@ -1,6 +1,6 @@
 {
   "name": "codedge/laravel-fpdf",
-  "description" : "Laravel package to include Fpdf. It ships with Fpdf 1.81.",
+  "description" : "Laravel package to include Fpdf. It ships with Fpdf 1.82.",
   "license": "MIT",
   "keywords": [
     "fpdf",
@@ -17,6 +17,32 @@
       "email": "holger.loesken@codedge.de"
     }
   ],
+  "require": {
+    "php": ">=7.3",
+    "illuminate/support": "^6.0|^7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0|^5.0",
+    "phpunit/phpunit": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Codedge\\Fpdf\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Codedge\\Fpdf\\Test\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
   "extra": {
     "laravel": {
       "providers": [
@@ -26,15 +52,5 @@
         "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
       }
     }
-  },
-  "require": {
-    "php": ">=7.3",
-    "illuminate/support": "^6.0|^7.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Codedge\\Fpdf\\": "src/"
-    }
-  },
-  "minimum-stability": "dev"
+  }
 }
