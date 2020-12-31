@@ -22,7 +22,7 @@
     "illuminate/support": "^6.0|^7.0|^8.0"
   },
   "require-dev": {
-    "orchestra/testbench": "^6.7.1",
+    "orchestra/testbench": "^6.7.2",
     "phpunit/phpunit": "^9.5.0"
   },
   "autoload": {
