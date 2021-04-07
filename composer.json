@@ -18,7 +18,7 @@
         "illuminate/support": "^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.16.0",
+        "orchestra/testbench": "^6.17.0",
         "phpunit/phpunit": "^9.5.4"
     },
     "config": {
