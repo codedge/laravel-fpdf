@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "^6.20.0",
-        "phpunit/phpunit": "^9.5.8"
+        "phpunit/phpunit": "^9.5.9"
     },
     "config": {
         "sort-packages": true
