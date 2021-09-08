@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Validate Composer configuration
         run: composer validate --strict
@@ -21,6 +21,6 @@ jobs:
           composer global require ergebnis/composer-normalize
           composer normalize --indent-style=space --indent-size=4 --no-check-lock --no-update-lock --no-interaction --ansi
 
-      - uses: stefanzweifel/git-auto-commit-action@v4.0.0
+      - uses: stefanzweifel/git-auto-commit-action@v4.11.0
         with:
           commit_message: normalize composer.json

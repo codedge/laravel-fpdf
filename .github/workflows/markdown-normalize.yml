@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Prettify markdown
-        uses: creyD/prettier_action@v3.0
+        uses: creyD/prettier_action@v4.0
         with:
           prettier_options: --write **/*.md

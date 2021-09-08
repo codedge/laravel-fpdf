@@ -1,56 +1,56 @@
 {
-  "name": "codedge/laravel-fpdf",
-  "description" : "Laravel package to include Fpdf. It ships with Fpdf 1.82.",
-  "license": "MIT",
-  "keywords": [
-    "fpdf",
-    "laravel",
-    "pdf"
-  ],
-  "support": {
-    "issues": "https://github.com/codedge/laravel-fpdf/issues",
-    "source": "https://github.com/codedge/laravel-fpdf"
-  },
-  "authors": [
-    {
-      "name": "Holger Lösken",
-      "email": "holger.loesken@codedge.de"
+    "name": "codedge/laravel-fpdf",
+    "description": "Laravel package to include Fpdf. It ships with Fpdf 1.82.",
+    "keywords": [
+        "fpdf",
+        "laravel",
+        "pdf"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Holger Lösken",
+            "email": "holger.loesken@codedge.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.3 || ^8.0",
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.20.1",
+        "phpunit/phpunit": "^9.5.9"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
+            },
+            "providers": [
+                "Codedge\\Fpdf\\FpdfServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Codedge\\Fpdf\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codedge\\Fpdf\\Test\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    },
+    "support": {
+        "issues": "https://github.com/codedge/laravel-fpdf/issues",
+        "source": "https://github.com/codedge/laravel-fpdf"
     }
-  ],
-  "require": {
-    "php": ">=7.3|^8.0",
-    "illuminate/support": "^6.0|^7.0|^8.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^6.13.0",
-    "phpunit/phpunit": "^9.5.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Codedge\\Fpdf\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Codedge\\Fpdf\\Test\\": "tests"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "sort-packages": true
-  },
-  "scripts": {
-    "test": "phpunit"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Codedge\\Fpdf\\FpdfServiceProvider"
-      ],
-      "aliases": {
-        "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
-      }
-    }
-  }
 }
