@@ -29,5 +29,3 @@ jobs:
           # to protected branches.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PRESET: DEPENDABOT_MINOR
-
-  The code is straight from the example of the Actio
