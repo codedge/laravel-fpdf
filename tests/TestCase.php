@@ -11,7 +11,6 @@ abstract class TestCase extends Orchestra
 {
     /**
      * @param  \Illuminate\Foundation\Application  $app
-     *
      * @return array|string[]
      */
     protected function getPackageProviders($app)
