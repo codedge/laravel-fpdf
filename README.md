@@ -10,7 +10,7 @@ Using [FPDF](http://www.fpdf.org/) made easy with Laravel. See [FPDF homepage](h
 
 ## Installation using [Composer](https://getcomposer.org/)
 ```sh
-$ composer require codedge/laravel-fpdf
+composer require codedge/laravel-fpdf
 ```
 
 ## Configuration
