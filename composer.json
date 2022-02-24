@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "^6.24.1",
-        "phpunit/phpunit": "^9.5.15"
+        "phpunit/phpunit": "^9.5.16"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
