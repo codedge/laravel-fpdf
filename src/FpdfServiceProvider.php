@@ -18,6 +18,10 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if(config('fpdf.fontpath')){
+            define('FPDF_FONTPATH', config('fpdf.fontpath'));
+        }
+        
         $this->publishes([
             __DIR__.'/config/fpdf.php' => config_path('fpdf.php'),
         ], 'config');
