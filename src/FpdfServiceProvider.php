@@ -1,6 +1,7 @@
 <?php namespace Codedge\Fpdf;
 
 use Illuminate\Support\ServiceProvider;
+use Codedge\Fpdf\Extensions\FpdfOptimize;
 
 class FpdfServiceProvider extends ServiceProvider
 {
@@ -47,12 +48,22 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function registerFpdf()
     {
-        $this->app->singleton('fpdf', function()
-        {
-            return new Fpdf\Fpdf(
-                config('fpdf.orientation'), config('fpdf.unit'), config('fpdf.size')
-            );
-        });
+        if(config('fpdf.optimize')){
+            $this->app->singleton('fpdf', function()
+            {
+                return new FpdfOptimize(
+                    config('fpdf.orientation'), config('fpdf.unit'), config('fpdf.size')
+                );
+            });
+        }else{
+            $this->app->singleton('fpdf', function()
+            {
+                return new Fpdf\Fpdf(
+                    config('fpdf.orientation'), config('fpdf.unit'), config('fpdf.size')
+                );
+            });
+        }
+
     }
 
     /**

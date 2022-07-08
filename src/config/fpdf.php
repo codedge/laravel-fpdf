@@ -15,6 +15,7 @@ return [
     'unit'              => 'mm',
     'size'              => 'A4',
     'fontpath'          => env('FPDF_FONTPATH', false),
+    'optimize'          => env('FPDF_OPTIMIZE', false)
 
     /*
     |--------------------------------------------------------------------------
