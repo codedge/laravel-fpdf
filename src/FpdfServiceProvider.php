@@ -43,6 +43,10 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function registerFpdf()
     {
+        if(config('fpdf.font_path') !== null) {
+            define('FPDF_FONTPATH', config('fpdf.font_path'));
+        }
+
         $this->app->singleton('fpdf', function()
         {
             return new Fpdf\Fpdf(
