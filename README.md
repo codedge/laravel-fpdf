@@ -36,6 +36,13 @@ Route::get('/', function (Codedge\Fpdf\Fpdf\Fpdf $fpdf) {
 });
 ```
 
+### Defining fonts
+
+FPDF comes with a set of fonts already defined and stored in the `src/Fpdf/font` directory.
+If you want to add your own font, please have a look at the [Adding new fonts and encodings](http://www.fpdf.org/en/tutorial/tuto7.htm) tutorial.
+
+You can change the font path, by using the `FPDF_FONTPATH` environment variable.
+
 ## Use in Laravel Vapor
 
 If you want to use [Laravel Vapor](https://vapor.laravel.com) to host your application,
