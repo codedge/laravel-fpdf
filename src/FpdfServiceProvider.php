@@ -63,6 +63,9 @@ class FpdfServiceProvider extends ServiceProvider
                 );
             });
         }
+        if(config('fpdf.font_path') !== null) {
+            define('FPDF_FONTPATH', config('fpdf.font_path'));
+        }
 
     }
 
