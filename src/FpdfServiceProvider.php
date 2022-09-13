@@ -43,7 +43,7 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function registerFpdf()
     {
-        if(config('fpdf.font_path') !== null) {
+        if(config('fpdf.font_path') !== null && !defined('FPDF_FONTPATH')) {
             define('FPDF_FONTPATH', config('fpdf.font_path'));
         }
 
