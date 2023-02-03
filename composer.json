@@ -19,11 +19,11 @@
     },
     "require": {
         "php": "^8.0 || ^8.1",
-        "illuminate/support": "^8.0 || ^9.0"
+        "illuminate/support": "^8.0 || ^9.0|^10.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.25.1",
-        "phpunit/phpunit": "^9.6.0"
+        "orchestra/testbench": "^6.25.1|^8.0",
+        "phpunit/phpunit": "^9.6.0|^9.5.10"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -38,9 +38,7 @@
         }
     },
     "config": {
-        "allow-plugins": {
-
-        },
+        "allow-plugins": [],
         "sort-packages": true
     },
     "extra": {
