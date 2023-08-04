@@ -1,6 +1,6 @@
 {
     "name": "codedge/laravel-fpdf",
-    "description": "Laravel package to include Fpdf. It ships with Fpdf 1.85.",
+    "description": "Laravel package to include Fpdf. It ships with Fpdf 1.86.",
     "license": "MIT",
     "keywords": [
         "fpdf",
@@ -18,7 +18,7 @@
         "source": "https://github.com/codedge/laravel-fpdf"
     },
     "require": {
-        "php": "~8.0 || ~8.1",
+        "php": "~8.0 || ~8.1 || ~8.2",
         "illuminate/support": "^9.0 || ^10.0"
     },
     "require-dev": {
