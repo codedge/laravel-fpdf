@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.39",
-        "orchestra/testbench": "^7.35.0 || ^8.0",
+        "orchestra/testbench": "^8.18.0",
         "phpunit/phpunit": "^9.6.0"
     },
     "minimum-stability": "dev",
