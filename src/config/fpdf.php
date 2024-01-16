@@ -11,10 +11,10 @@ return [
     |
     */
 
-    'orientation'       => 'P',
-    'unit'              => 'mm',
-    'size'              => 'A4',
-    'font_path'         => env('FPDF_FONTPATH'),
+    'orientation' => 'P',
+    'unit' => 'mm',
+    'size' => 'A4',
+    'font_path' => env('FPDF_FONTPATH'),
 
     /*
     |--------------------------------------------------------------------------
@@ -25,6 +25,6 @@ return [
     | a special header needs to be attached to each download response.
     |
     */
-    'useVaporHeaders'  => env('FPDF_VAPOR_HEADERS', false),
+    'useVaporHeaders' => env('FPDF_VAPOR_HEADERS', false),
 
 ];
