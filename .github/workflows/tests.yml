@@ -9,20 +9,14 @@ jobs:
 
     strategy:
       matrix:
-        php: ['8.1', '8.2']
-        laravel: ['9.*', '10.*', '11.*']
+        php: ['8.3', '8.4']
+        laravel: [10.*, 11.*]
         dependency-version: [prefer-stable]
         include:
+          - laravel: 11.*
+          - testbench: 9.*
           - laravel: 10.*
             testbench: 8.*
-          - laravel: 9.*
-            testbench: 7.*
-          - laravel: 11.*
-            testbench: 9.*
-        exclude:
-          - laravel: 11.*
-            php: '8.1'
-
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
     steps:
@@ -38,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
+          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
         env:
           APP_ENV: testing
 
@@ -51,7 +45,7 @@ jobs:
         name: Push coverage to codecov
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./clover.xml
+          file: ./coverage.xml
           flags: unittests
           name: codecov-umbrella
-          fail_ci_if_error: true
+          fail_ci_if_error: false
