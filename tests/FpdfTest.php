@@ -8,7 +8,7 @@ use Codedge\Fpdf\Fpdf\Fpdf;
 
 class FpdfTest extends TestCase
 {
-    protected $fpdf;
+    protected Fpdf $fpdf;
 
     public function setUp(): void
     {
