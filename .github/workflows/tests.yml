@@ -41,7 +41,7 @@ jobs:
         env:
           APP_ENV: testing
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         name: Push coverage to codecov
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
