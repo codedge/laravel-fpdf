@@ -19,11 +19,11 @@
     },
     "require": {
         "php": "~8.3 || ~8.4",
-        "illuminate/support": "^10.0 || ^11.0"
+        "illuminate/support": "^11.0 || ^12.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.39",
-        "orchestra/testbench": "^8.0 || ^9.0",
+        "orchestra/testbench": "^9.0 || ^10.0",
         "phpunit/phpunit": "^10.5"
     },
     "minimum-stability": "dev",
